@@ -9,7 +9,7 @@
   <% @students.each do |student| %>
     <tr>
       <td><%= student.full_name %></td>
-      <td><%= student.house %></td>
+      <td><%= student.house.name %></td>
       <td><%= student.age %></td>
     </tr>
   <% end %>
