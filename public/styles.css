@@ -1,8 +1,54 @@
 body {
-  
+  background-image: url('hogwarts.jpg');
+  background-size: cover;
+  color: gold;
+  text-align: center;
+}
+
+nav {
+  text-align: left;
+}
+
+li {
+  display: inline-block;
+  padding: 1vw;
+}
+
+a {
+  color: skyblue;
+}
+
+h2 {
+  display: inline-block;
+  background-color: black;
+}
+
+form {
+  display: inline-block;
+  background-color: black;
+}
+
+table {
+  margin: auto;
+  background-color: black;
+}
+
+th {
+  font-size: 1.5em;
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid gold;
   text-align: center;
+}
+
+img.resize {
+  display: inline-block;
+  max-width: 5vw;
+  height: auto;
+}
+
+p {
+  display: inline-block;
+  background-color: black;
 }

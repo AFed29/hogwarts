@@ -9,7 +9,9 @@
   <% @students.each do |student| %>
     <tr>
       <td><%= student.full_name %></td>
-      <td><%= student.house.name %></td>
+      <td>
+        <img class="resize" src="<%= student.house.logo_url %>" alt="<%= student.house.name %>'s logo">
+      </td>
       <td><%= student.age %></td>
     </tr>
   <% end %>

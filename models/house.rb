@@ -25,6 +25,11 @@ class House
       @id = house.first()['id'].to_i
     end
 
+    def self.delete_all()
+      sql = "DELETE FROM houses;"
+      SqlRunner.run( sql )
+    end
+
     def self.all()
       sql = "SELECT * FROM houses;"
       houses = SqlRunner.run( sql )
@@ -33,10 +38,10 @@ class House
 
     def self.find_by_id(id)
       sql = "SELECT * FROM houses
-            WHERE id = $1"
+            WHERE id = $1;"
       values = [id]
       house = SqlRunner.run( sql, values ).first()
       return House.new( house )
     end
-    
+
 end
